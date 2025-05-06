@@ -18,7 +18,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: jajachat/dist/jajachat
+    baseDirectory: jajachat/dist/jajachat/browser
     files:
       - '**/*'
   cache:
