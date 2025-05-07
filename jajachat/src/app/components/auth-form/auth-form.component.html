@@ -1,16 +1,26 @@
-<p>auth-form works!</p>
-<div class="auth-form">
-    <h2>{{ isRegisterMode ? 'Registro' : 'Iniciar sesión' }}</h2>
+<div class="container mt-5">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card p-4 shadow-sm w-100" style="max-width: 400px;">
+            <h2 class="text-center">{{ isRegisterMode ? 'Registro' : 'Iniciar sesión' }}</h2>
 
-    <form [formGroup]="authForm" (ngSubmit)="submit()">
-        <input formControlName="email" type="email" placeholder="Correo" />
-        <input formControlName="password" type="password" placeholder="Contraseña" />
-        <button type="submit">{{ isRegisterMode ? 'Registrarse' : 'Entrar' }}</button>
-    </form>
+            <form [formGroup]="authForm" (ngSubmit)="submit()">
+                <div class="mb-3">
+                    <input formControlName="email" type="email" class="form-control" placeholder="Correo" />
+                </div>
+                <div class="mb-3">
+                    <input formControlName="password" type="password" class="form-control" placeholder="Contraseña" />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+        {{ isRegisterMode ? 'Registrarse' : 'Entrar' }}
+      </button>
+            </form>
 
-    <button (click)="toggleMode()" class="toggle">
+            <button (click)="toggleMode()" class="btn btn-link mt-2 w-100">
       {{ isRegisterMode ? '¿Ya tienes cuenta? Inicia sesión' : '¿No tienes cuenta? Regístrate' }}
     </button>
 
-    <p class="message">{{ message }}</p>
+            <p class="text-center mt-3 text-muted">{{ message }}</p>
+        </div>
+    </div>
+
 </div>
