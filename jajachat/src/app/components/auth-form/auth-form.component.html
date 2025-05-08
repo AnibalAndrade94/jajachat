@@ -10,6 +10,9 @@
                 <div class="mb-3">
                     <input formControlName="password" type="password" class="form-control" placeholder="Contraseña" />
                 </div>
+                <div class="mb-3" *ngIf="isConfirmMode">
+                    <input formControlName="code" type="text" class="form-control" placeholder="Código de confirmación" />
+                </div>
                 <button type="submit" class="btn btn-primary w-100">
         {{ isRegisterMode ? 'Registrarse' : 'Entrar' }}
       </button>

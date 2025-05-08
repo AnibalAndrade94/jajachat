@@ -30,8 +30,9 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "src/styles.scss"
+                          "@angular/material/prebuilt-themes/purple-green.css",
+                          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                          "src/styles.scss"
                         ],
                         "scripts": [
                             "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -97,8 +98,9 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "src/styles.scss"
+                          "@angular/material/prebuilt-themes/purple-green.css",
+                          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                          "src/styles.scss"
                         ],
                         "scripts": [
                             "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
